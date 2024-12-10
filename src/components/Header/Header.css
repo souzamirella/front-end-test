@@ -1,0 +1,73 @@
+.header{
+  margin: 16px 0;
+}
+
+.menu{
+  width: 22px;
+  height: 22px;
+  background-color:brown;
+  overflow: hidden;
+}
+
+.logo{
+  width: 170px;
+  height: 41px;
+}
+
+.search{
+  width: 718px;
+  height: 23px;
+ }
+
+.search input{
+  width: 90%;
+  border: 0;  
+}
+
+.search button{
+  width: 4%;
+  border: 0;  
+  background: transparent;
+}
+
+.search .search-container{
+  border-bottom: 1px solid #7a7a7a;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.account-link{
+  width: 97px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-link a{
+  font-size: 13px;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+.minicart{
+  width: 37px;
+  height: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.minicart .qtd{
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  background-color: #f8475f;
+}
