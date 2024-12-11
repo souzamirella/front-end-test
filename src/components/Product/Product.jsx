@@ -2,9 +2,25 @@
 import "./Product.css"
 
 import Flag from '../../assets/flag.png'
+import { useEffect } from "react";
 
 function Product(props) {
   const { imageUrl, productName, price, listPrice, installments, stars } = props
+
+  useEffect(() => {
+    const total = localStorage.getItem("minicart");
+    if (!total) {
+      localStorage.setItem("minicart", Number(0));
+    }
+  }, []);
+
+  function addToCart(){
+    const total = localStorage.getItem("minicart");
+
+    if(total){
+      localStorage.setItem("minicart", Number(total) + 1);
+    }
+  }
 
   return (
     <div className="product">
@@ -33,7 +49,7 @@ function Product(props) {
             {!!installments?.length && (<div className="installments">ou em {installments[0].quantity}x de R$ {installments[0].value}</div>)}
             
           </div>
-          <button className="product-buy">Comprar</button>
+          <button className="product-buy" onClick={() => addToCart()}>Comprar</button>
         </div>
       </div>
     </div>

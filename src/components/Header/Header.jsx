@@ -1,7 +1,18 @@
 
+import { useState, useEffect } from "react";
 import "./Header.css"
 
 function Header() {
+  const [minicart, setmMinicart] = useState(localStorage.getItem('minicart'));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const total = localStorage.getItem('minicart');
+      setmMinicart(total);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="header">
@@ -60,7 +71,7 @@ function Header() {
             </defs>
           </svg>
 
-          <div className="qtd">1</div>
+          <div className="qtd">{minicart ? minicart : 0}</div>
         </div>
       </div>
     </div>
