@@ -5,6 +5,7 @@ import Banner from "../../components/Banner/Banner"
 import Header from "../../components/Header/Header"
 import ProductList from "../../components/ProductList/ProductList";
 import Newsletter from "../../components/Newsletter/Newsletter";
+import Footer from "../../components/Footer/Footer";
 
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
          <Banner/>
          <ProductList />
          <Newsletter />
+         <Footer />
         </>
     )
   }
