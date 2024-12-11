@@ -1,7 +1,18 @@
 
 import "./HeaderMobile.css"
+import { useState, useEffect } from "react";
 
 function HeaderMobile() {
+  const [minicart, setmMinicart] = useState(localStorage.getItem('minicart'));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const total = localStorage.getItem('minicart');
+      setmMinicart(total);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="header-mobile">
@@ -37,7 +48,7 @@ function HeaderMobile() {
             </defs>
           </svg>
 
-          <div className="qtd">1</div>
+          <div className="qtd">{minicart}</div>
         </div>
       </div>
 
