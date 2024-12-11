@@ -55,7 +55,7 @@ O site estará rodando e você poderá explorar a interface.
 
 ## Desktop
 
-![Screenshot do site](./src/assets/desktop.png)
+![Screenshot do site](./src/assets/desktop-new.png)
 
 ## Mobile
-![Screenshot do site mobile](./src/assets/mobile.png)
+![Screenshot do site mobile](./src/assets/mobile-new.png)
