@@ -4,6 +4,7 @@
     max-width: 216px;
     height: 355px;
     padding-bottom: 2px;
+    margin: 0 auto;
 }
 
 .product:hover{
@@ -14,10 +15,13 @@
     display: block;
 }
 
-
 .product-container{
     text-align:center;
     position: relative;
+}
+
+.product image{
+    margin: 0 auto;
 }
 
 .product-name{
