@@ -96,10 +96,11 @@
     justify-content: space-between;
   }
 
-  .created-by{
+  .created-by a{
     display: flex;
     align-items: baseline;
     justify-content: end;
+    text-decoration: none;
   }
 
   .created-by p{

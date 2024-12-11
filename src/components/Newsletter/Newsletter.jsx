@@ -29,7 +29,7 @@ function Newsletter() {
         });
 
         if(response.status === 200){
-            setSuccess(response.data.message);
+            setSuccess("Seu e-mail foi cadastrado com sucesso!");
             setName('');
             setEmail('');
         }
@@ -66,8 +66,8 @@ function Newsletter() {
 
                 </form>
 
-                {error && <p>{error}</p>}
-                {success && <p >{success}</p>}
+                {error && <p className='error'>{error}</p>}
+                {success && <p className='success'>{success}</p>}
             </div>
         </div>
     )

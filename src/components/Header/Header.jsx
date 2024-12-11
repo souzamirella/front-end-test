@@ -56,7 +56,7 @@ function Header() {
             </defs>
           </svg>
 
-          <a href="/account">Minha Conta</a>
+          <a href="/account" title="Minha Conta">Minha Conta</a>
 
         </div>
         <div className="minicart">
