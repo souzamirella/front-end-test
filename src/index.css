@@ -17,3 +17,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
