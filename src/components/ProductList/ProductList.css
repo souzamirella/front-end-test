@@ -12,6 +12,7 @@
     text-align: left;
     font-size: 20px;
     font-weight: bold;
+    padding: 0 25px;
 }
 
 .product-container h4:after{
