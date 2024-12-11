@@ -31,6 +31,10 @@
   border: 0;  
 }
 
+.search input:focus-visible{
+  outline: none;
+}
+
 .search button{
   width: 4%;
   border: 0;  
