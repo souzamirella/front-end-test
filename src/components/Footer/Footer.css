@@ -74,6 +74,11 @@
   margin: 0;
 }
 
+.created-by a{
+  text-decoration: none;
+}
+
+
 .created-by p{
   text-align: center;
   color: #fff;
