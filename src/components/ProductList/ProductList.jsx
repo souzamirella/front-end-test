@@ -7,11 +7,13 @@ import Slider from "react-slick";
 
 function ProductList() {
   const [product, setProduct] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(()=>{
     async function getData(){
       const { data } = await axios.get("https://corebiz-test-server.onrender.com/api/v1/products")
       setProduct(data)
+      setLoading(false)
     }
 
     getData()
@@ -56,6 +58,10 @@ function ProductList() {
     <div className="product-list">
       <div className="product-container">
         <h4>Mais Vendidos</h4>
+
+        {
+          loading && ("Buscando produtos maravilhosos... 😊")
+        }
 
         <Slider {...settings}>
           {
