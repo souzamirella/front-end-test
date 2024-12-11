@@ -68,6 +68,10 @@
     cursor: pointer;
 }
 
+.product-buy:hover{
+    background: #333;
+}
+
 .flag{
     width: 80px;
     position: absolute;

@@ -36,6 +36,10 @@
     background: #000;
 }
 
+.newsletter button:hover{
+    background: #333;
+}
+
 .newsletter-container{
     width: 100%;
     max-width: 720px;
