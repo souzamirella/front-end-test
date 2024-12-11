@@ -1,11 +1,16 @@
-:root {
-  font-family: "Nunito", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #000;
-  background-color: #FFF;
+
+*{
+  box-sizing: border-box;
 }
 
 html{
   overflow-x: hidden;
+}
+
+:root {
+  font-family: "Nunito", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #FFF;
 }
 
 body {
