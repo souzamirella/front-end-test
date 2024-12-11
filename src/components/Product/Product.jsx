@@ -42,11 +42,11 @@ function Product(props) {
             <Review number={stars} />
           </div>
           <div className="product-prices">
-            {listPrice && (<div className="list-price">de R$ {listPrice}</div>)}
+            {listPrice && (<div className="list-price">de R$ {formatCurrency(listPrice)}</div>)}
             
-            <div className="best-price">por R$ {price}</div>
+            <div className="best-price">por R$ {formatCurrency(price)}</div>
 
-            {!!installments?.length && (<div className="installments">ou em {installments[0].quantity}x de R$ {installments[0].value}</div>)}
+            {!!installments?.length && (<div className="installments">ou em {installments[0].quantity}x de R$ {formatCurrency(installments[0].value)}</div>)}
             
           </div>
           <button className="product-buy" onClick={() => addToCart()}>Comprar</button>
@@ -144,6 +144,13 @@ function StarEmpty(){
       </svg>
     </>
   )
+}
+
+function formatCurrency(value) {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  }).format(value / 100);
 }
 
 export default Product
